@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/validator-product",
+    "description": "Package validator-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ValidatorProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/yaml": "^7.0",
+        "webmozart/assert": "^1.0",
+        "psr/cache": "^3.0",
+        "symfony/validator": "^7.0",
+        "nesbot/carbon": "^2.72",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
